@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom.css">
+  
+    <title>Coustom Form</title>
+</head>
+<body>
+    
+<!--               COUSTOM    FROM TOURS         -->
+
+<div class="background-container">
+    <header>
+        <h1>Custom Tours Form</h1>
+    </header>
+    
+    <div class="form-container">
+        <main>
+            <form id="tourForm" action="your-server-endpoint" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0301 2345678" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tour Details</legend>
+                    <div class="form-group">
+                        <label for="dateTime">Date / Time *</label>
+                        <input type="datetime-local" id="dateTime" name="dateTime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numAdults">Number of Adults *</label>
+                        <input type="number" id="numAdults" name="numAdults" placeholder="Number of Adults" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numChildren">Total Number of Children *</label>
+                        <input type="number" id="numChildren" name="numChildren" placeholder="Total Number of Children" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="childrenAges">Children Ages *</label>
+                        <input type="text" id="childrenAges" name="childrenAges" placeholder="Children Ages (Year)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numRooms">Number of Rooms *</label>
+                        <input type="number" id="numRooms" name="numRooms" placeholder="Number of Rooms" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="departureCity">Departure From (City) *</label>
+                        <select id="departureCity" name="departureCity" required>
+                            <option value="" disabled selected>Select City</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="rawalpindi">Rawalpindi</option>
+                            <option value="peshawar">Peshawar</option>
+                            <option value="quetta">Quetta</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="multan">Multan</option>
+                            <option value="gujranwala">Gujranwala</option>
+                            <option value="sialkot">Sialkot</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="bahawalpur">Bahawalpur</option>
+                            <option value="sukkur">Sukkur</option>
+                            <option value="sargodha">Sargodha</option>
+                            <option value="abbottabad">Abbottabad</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tourType">Tour Type *</label>
+                        <select id="tourType" name="tourType" required>
+                            <option value="" disabled selected>Select Tour Type</option>
+                            <option value="domestic">Domestic</option>
+                            <option value="international">International</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tripDuration">Duration of Trip *</label>
+                        <input type="text" id="tripDuration" name="tripDuration" placeholder="Duration of Trip" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Additional notes"></textarea>
+                        <small>0 of 1000 max characters.</small>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>
